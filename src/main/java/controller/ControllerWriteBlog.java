@@ -28,7 +28,7 @@ public class ControllerWriteBlog {
     public Iterable<Category> categorys(){
         return categoryService.findAll();
     }
-@GetMapping("blog-list")
+@GetMapping("/blog-list")
 public ModelAndView listBlog(@RequestParam("s")Optional<String> s,Pageable pageable){
         Page<Blog> blogs;
     if(s.isPresent()){
@@ -47,7 +47,7 @@ public ModelAndView listBlog(@RequestParam("s")Optional<String> s,Pageable pagea
     modelAndView.addObject("blog",new Blog());
     return modelAndView;
 }
-@PostMapping("create-blog")
+@PostMapping("/create-blog")
     public ModelAndView saveBlog(@ModelAttribute("blog") Blog blog){
     blogService.save(blog);
     ModelAndView modelAndView = new ModelAndView("/blog/create");

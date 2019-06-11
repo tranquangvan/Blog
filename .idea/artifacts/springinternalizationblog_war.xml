@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springinternalizationblog:war">
+    <output-path>$PROJECT_DIR$/../springinternalizationblog/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springinternalizationblog</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-internalization-blog.war">
+      <element id="artifact" artifact-name="springinternalizationblog:war exploded" />
+    </root>
+  </artifact>
+</component>

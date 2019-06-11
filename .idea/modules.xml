@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../categoryBlogVersion2/categoryBlogVersion2.iml" filepath="$PROJECT_DIR$/../categoryBlogVersion2/categoryBlogVersion2.iml" />
       <module fileurl="file://$PROJECT_DIR$/createAndReadBlog.iml" filepath="$PROJECT_DIR$/createAndReadBlog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../managerCustomerUsingRestful/managerCustomerUsingRestful.iml" filepath="$PROJECT_DIR$/../managerCustomerUsingRestful/managerCustomerUsingRestful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shopFlower/shopFlower.iml" filepath="$PROJECT_DIR$/../shopFlower/shopFlower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springinternalizationblog/springinternalizationblog.iml" filepath="$PROJECT_DIR$/../springinternalizationblog/springinternalizationblog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springsecurity/springsecurity.iml" filepath="$PROJECT_DIR$/../springsecurity/springsecurity.iml" />
     </modules>
   </component>
 </project>

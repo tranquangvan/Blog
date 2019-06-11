@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../categoryBlogVersion2" />
     <file type="web" url="file://$PROJECT_DIR$" />
+    <file type="web" url="file://$PROJECT_DIR$/../managerCustomerUsingRestful" />
+    <file type="web" url="file://$PROJECT_DIR$/../springinternalizationblog" />
+    <file type="web" url="file://$PROJECT_DIR$/../springsecurity" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../shopFlower/pom.xml" />
+        <option value="$PROJECT_DIR$/../managerCustomerUsingRestful/pom.xml" />
+        <option value="$PROJECT_DIR$/../springinternalizationblog/pom.xml" />
+        <option value="$PROJECT_DIR$/../springsecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/../categoryBlogVersion2/pom.xml" />
       </list>
     </option>
   </component>

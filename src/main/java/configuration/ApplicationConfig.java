@@ -1,6 +1,8 @@
+package configuration;
 
 import formatter.CategoryFormatter;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.thymeleaf.extras.springsecurity4.dialect.SpringSecurityDialect;
 import service.BlogService;
 import service.CategoryService;
@@ -63,7 +65,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     }
 
     //Thymeleaf Configuration
-    @Bean
+    @Bean(name = "HelloWorld")
     public SpringResourceTemplateResolver templateResolver(){
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
@@ -114,7 +116,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/writeBlog");
-        dataSource.setUsername( "root" );
+        dataSource.setUsername( "van" );
         dataSource.setPassword( "123456" );
         return dataSource;
     }
@@ -137,6 +139,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Override
     public void addFormatters(FormatterRegistry registry) {
             registry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
+    }
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
     }
 
 }

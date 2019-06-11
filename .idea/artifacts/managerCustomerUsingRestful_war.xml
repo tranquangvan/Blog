@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="managerCustomerUsingRestful:war">
+    <output-path>$PROJECT_DIR$/../managerCustomerUsingRestful/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>managerCustomerUsingRestful</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="managerCustomerUsingRestful.war">
+      <element id="artifact" artifact-name="managerCustomerUsingRestful:war exploded" />
+    </root>
+  </artifact>
+</component>

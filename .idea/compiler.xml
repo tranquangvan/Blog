@@ -6,11 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="categoryBlogVersion2" />
         <module name="createAndReadBlog" />
+        <module name="managerCustomerUsingRestful" />
+        <module name="shopFlower" />
+        <module name="springinternalizationblog" />
+        <module name="springsecurity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="categoryBlogVersion2" target="1.7" />
       <module name="createAndReadBlog" target="1.8" />
+      <module name="managerCustomerUsingRestful" target="1.7" />
+      <module name="shopFlower" target="1.7" />
+      <module name="springinternalizationblog" target="1.7" />
+      <module name="springsecurity" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
