@@ -1,6 +1,7 @@
 
 import formatter.CategoryFormatter;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
+import org.thymeleaf.extras.springsecurity4.dialect.SpringSecurityDialect;
 import service.BlogService;
 import service.CategoryService;
 
@@ -77,6 +78,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public TemplateEngine templateEngine(){
         TemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
+        templateEngine.addDialect(new SpringSecurityDialect());
         return templateEngine;
     }
 
@@ -124,6 +126,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return transactionManager;
     }
 
+
     Properties additionalProperties() {
         Properties properties = new Properties();
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
@@ -135,4 +138,5 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     public void addFormatters(FormatterRegistry registry) {
             registry.addFormatter(new CategoryFormatter(applicationContext.getBean(CategoryService.class)));
     }
+
 }
